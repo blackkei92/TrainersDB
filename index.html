@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base de Datoas de Entrenadores</title>
+
+  <!-- BOOTSWATCH -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css">
+
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+</head>
+
+<body class="bg-light">
+
+  <!-- ADD TASK -->
+
+
+  
+  <div>
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            </div>
+
+            <h1 class="h4">Ingresa tu Nick y código. 😀</h1>
+
+            <form id="task-form">
+              <div class="form-group">
+                <input type="text" id="task-title" class="form-control" class="Nick de Entrenador" placeholder="Nick de Entrenador"
+                  autofocus>
+              </div>
+          
+              <div class="form-group">
+                <textarea id="task-description" rows="3" class="form-control" placeholder="Task Description"></textarea>
+              </div>
+
+
+              
+              <button class="btn btn-primary" id="btn-task-form">
+                Save
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Tasks List -->
+      <div class="col-md-6" id="tasks-container"></div>
+    </div>
+  </div>
+
+  <!-- FIREBASE -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBT9EbwNS84HYteim1NK-BQdmthKw56_-c",
+    authDomain: "blackkei92-ea97f.firebaseapp.com",
+    databaseURL: "https://blackkei92-ea97f-default-rtdb.firebaseio.com",
+    projectId: "blackkei92-ea97f",
+    storageBucket: "blackkei92-ea97f.appspot.com",
+    messagingSenderId: "162536733184",
+    appId: "1:162536733184:web:4398b1335c94b652f7f6e5",
+    measurementId: "G-THS9FYP5RR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- CUSTOM CODE -->
+  <script src="index.js"></script>
+</body>
+
+</html>
